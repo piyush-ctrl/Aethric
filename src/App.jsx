@@ -149,7 +149,7 @@ function App() {
 
         <Hero />
 
-        <Marquee />
+        {/* <Marquee /> */}
 
         <FeaturedProducts
           onAddToCart={addToCart}

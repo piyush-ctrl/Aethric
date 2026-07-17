@@ -69,7 +69,8 @@ const Editorial = () => {
           <div className="editorial-large">
 
             <img
-              src="/images/editorial/editorial1.webp"
+              src="/images/editorial/editorial1.jpg
+              "
               alt="Editorial Campaign"
             />
 
@@ -78,7 +79,7 @@ const Editorial = () => {
           <div className="editorial-small">
 
             <img
-              src="/images/editorial/editorial2.webp"
+              src="/images/editorial/editorial2.jpg"
               alt="Editorial Portrait"
             />
 
