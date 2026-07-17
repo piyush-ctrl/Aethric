@@ -78,14 +78,14 @@ const Hero = () => {
         >
           <div className="hero-image">
 
-            <img
-              src="/images/hero/hero.webp"
-              alt="Aethric Campaign"
-            />
+  <img
+    src="/images/hero/hero.jpg"
+    alt="Aethric Campaign"
+  />
 
-            <div className="image-shadow"></div>
+  <div className="image-shadow"></div>
 
-          </div>
+</div>
         </motion.div>
 
       </div>
