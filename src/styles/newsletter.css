@@ -1,0 +1,612 @@
+/* ==========================================
+   NEWSLETTER
+========================================== */
+
+.newsletter{
+
+    position:relative;
+
+    background:#f5f1ea;
+
+    color:#111;
+
+    padding:170px 6%;
+
+    overflow:hidden;
+
+}
+
+.newsletter-bg{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(circle at 15% 20%,
+    rgba(255,120,0,.10),
+    transparent 30%),
+
+    radial-gradient(circle at 90% 80%,
+    rgba(0,0,0,.05),
+    transparent 35%);
+
+    pointer-events:none;
+
+}
+
+.newsletter-container{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.newsletter-tag{
+
+    display:inline-block;
+
+    font-size:.72rem;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    color:#777;
+
+    margin-bottom:28px;
+
+}
+
+.newsletter h2{
+
+    font-size:clamp(4rem,8vw,7.5rem);
+
+    line-height:.88;
+
+    letter-spacing:-5px;
+
+    font-weight:900;
+
+    margin-bottom:35px;
+
+}
+
+.newsletter p{
+
+    max-width:620px;
+
+    margin:0 auto 55px;
+
+    font-size:1.08rem;
+
+    line-height:2;
+
+    color:#666;
+
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+.newsletter-form{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:18px;
+
+    margin-bottom:55px;
+
+}
+
+.newsletter-form input{
+
+    width:500px;
+
+    max-width:100%;
+
+    height:66px;
+
+    border:none;
+
+    outline:none;
+
+    padding:0 28px;
+
+    border-radius:60px;
+
+    background:white;
+
+    font-size:.9rem;
+
+    letter-spacing:2px;
+
+    box-shadow:
+
+    0 20px 60px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.newsletter-form input:focus{
+
+    box-shadow:
+
+    0 20px 70px rgba(255,120,0,.18);
+
+}
+
+.newsletter-form input::placeholder{
+
+    color:#999;
+
+    letter-spacing:2px;
+
+}
+/* ==========================================
+   SUBSCRIBE BUTTON
+========================================== */
+
+.newsletter-form button{
+
+    height:66px;
+
+    padding:0 34px;
+
+    border:none;
+
+    border-radius:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    background:#111;
+
+    color:#fff;
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    cursor:pointer;
+
+    transition:
+
+    transform .35s ease,
+
+    background .35s ease,
+
+    color .35s ease,
+
+    box-shadow .35s ease;
+
+    box-shadow:
+
+    0 20px 60px rgba(0,0,0,.18);
+
+}
+
+.newsletter-form button svg{
+
+    transition:transform .35s ease;
+
+}
+
+.newsletter-form button:hover{
+
+    background:#ff6b00;
+
+    transform:translateY(-5px);
+
+    box-shadow:
+
+    0 25px 70px rgba(255,107,0,.35);
+
+}
+
+.newsletter-form button:hover svg{
+
+    transform:translateX(6px);
+
+}
+
+/* ==========================================
+   FOOT NOTES
+========================================== */
+
+.newsletter-bottom{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:45px;
+
+    flex-wrap:wrap;
+
+}
+
+.newsletter-bottom span{
+
+    position:relative;
+
+    font-size:.75rem;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:#888;
+
+}
+
+.newsletter-bottom span:not(:last-child)::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-24px;
+
+    top:50%;
+
+    width:6px;
+
+    height:6px;
+
+    border-radius:50%;
+
+    background:#ff6b00;
+
+    transform:translateY(-50%);
+
+}
+
+/* ==========================================
+   MICRO ANIMATIONS
+========================================== */
+
+.newsletter-form{
+
+    position:relative;
+
+}
+
+.newsletter-form button{
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.newsletter-form button::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-120%;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    transparent,
+
+    rgba(255,255,255,.25),
+
+    transparent);
+
+    transition:.7s;
+
+}
+
+.newsletter-form button:hover::before{
+
+    left:120%;
+
+}
+
+.newsletter-form input,
+
+.newsletter-form button{
+
+    will-change:transform;
+
+}
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:1100px){
+
+.newsletter{
+
+padding:130px 5%;
+
+}
+
+.newsletter h2{
+
+font-size:clamp(3.5rem,9vw,6rem);
+
+letter-spacing:-3px;
+
+}
+
+.newsletter p{
+
+max-width:680px;
+
+font-size:1rem;
+
+line-height:1.8;
+
+}
+
+.newsletter-form{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.newsletter-form input{
+
+width:100%;
+
+max-width:650px;
+
+}
+
+.newsletter-form button{
+
+width:100%;
+
+max-width:650px;
+
+justify-content:center;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.newsletter{
+
+padding:90px 20px;
+
+}
+
+.newsletter-tag{
+
+font-size:.62rem;
+
+letter-spacing:3px;
+
+margin-bottom:20px;
+
+}
+
+.newsletter h2{
+
+font-size:2.9rem;
+
+line-height:.92;
+
+letter-spacing:-2px;
+
+margin-bottom:22px;
+
+}
+
+.newsletter p{
+
+font-size:.92rem;
+
+line-height:1.7;
+
+margin-bottom:35px;
+
+}
+
+.newsletter-form{
+
+gap:15px;
+
+margin-bottom:35px;
+
+}
+
+.newsletter-form input{
+
+height:56px;
+
+padding:0 20px;
+
+font-size:.8rem;
+
+letter-spacing:1px;
+
+}
+
+.newsletter-form button{
+
+height:56px;
+
+padding:0 24px;
+
+font-size:.68rem;
+
+gap:10px;
+
+}
+
+.newsletter-bottom{
+
+flex-direction:column;
+
+gap:14px;
+
+}
+
+.newsletter-bottom span::after{
+
+display:none;
+
+}
+
+}
+
+@media (min-width:1700px){
+
+.newsletter{
+
+padding:200px 8%;
+
+}
+
+.newsletter-container{
+
+max-width:1050px;
+
+}
+
+.newsletter h2{
+
+font-size:8.5rem;
+
+}
+
+.newsletter p{
+
+max-width:760px;
+
+font-size:1.15rem;
+
+}
+
+.newsletter-form input{
+
+width:600px;
+
+}
+
+}
+
+/* ==========================================
+   PREMIUM FINISH
+========================================== */
+
+.newsletter *{
+
+will-change:transform;
+
+}
+
+.newsletter-form input{
+
+transition:
+
+box-shadow .35s ease,
+
+transform .35s ease,
+
+border-color .35s ease;
+
+}
+
+.newsletter-form input:hover{
+
+transform:translateY(-2px);
+
+}
+
+.newsletter-form input:focus{
+
+transform:translateY(-3px);
+
+}
+
+.newsletter-form button:active{
+
+transform:scale(.97);
+
+}
+
+.newsletter-bottom span{
+
+transition:
+
+color .35s ease,
+
+transform .35s ease;
+
+cursor:default;
+
+}
+
+.newsletter-bottom span:hover{
+
+color:#111;
+
+transform:translateY(-2px);
+
+}
+
+.newsletter::after{
+
+content:"";
+
+position:absolute;
+
+left:50%;
+
+bottom:0;
+
+transform:translateX(-50%);
+
+width:85%;
+
+height:1px;
+
+background:linear-gradient(
+90deg,
+transparent,
+rgba(0,0,0,.12),
+transparent
+);
+
+}
